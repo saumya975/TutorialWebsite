@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Tutorial</title>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        div.htmlElement {
+
+            background-color: rgb(85, 132, 139);
+            width: 80%;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 240px;
+            border-radius: 5px;
+            border: 1 px solid gainsboro;
+            color: whitesmoke;
+        }
+
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        nav a:visited {
+            color: beige;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        #sidenav {
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            margin-top: 0px;
+        }
+
+        hr.hr1 {
+            border: 1px solid rgb(165, 147, 147);
+        }
+
+        .sidenav {
+            float: right;
+            border-color: rgb(16, 111, 128);
+            overflow: hidden;
+            background-color: rgb(17, 124, 143);
+            width: 200px;
+        }
+
+        .sidenav a {
+            display: block;
+            text-align: left;
+            padding: 14px 16px;
+            color: snow;
+            text-decoration: none;
+        }
+
+        .sidenav a:hover {
+            background-color: rgb(15, 87, 100);
+            color: rgb(230, 225, 225);
+        }
+
+        .BtnContainer {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+        .PrevBtn,
+        .NextBtn {
+            font-size: 21px;
+            border-radius: 4px;
+
+            border: none;
+            background-color: rgb(17, 124, 143);
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #course">Courses&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #studyMaterial">Study Material&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #mcq">MCQs&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="Register.html" target="_blank">Register</a>
+    </nav>
+    <hr>
+    <section>
+        <div class="sidenav" id="sidenav">
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b style="color:rgb(181, 213, 218)">
+                    ----HTML---- </b></p>
+
+            <a href="htmlPage1.html">⚪ HTML Intro</a>
+            <a href="htmlPage2.html">🔵<i><b> HTML Elements</b></i></a>
+            <a href="htmlPage3.html">⚪ HTML Attributes</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>----CSS----</b></p>
+
+            <a href="cssPage1.html">⚪ CSS Intro</a>
+            <a href="cssPage2.html">⚪ CSS Borders</b></i></a>
+            <a href="cssPage3.html">⚪ CSS Text</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>---JavaScript---</b></p>
+
+            <a href="jsPage1.html">⚪ JavaScript Intro</a>
+            <a href="jsPage2.html">⚪ JavaScript Data Types</a>
+            <a href="jsPage3.html">⚪ JavaScript Operators</a>
+        </div>
+    </section>
+
+    <section>
+
+
+
+        <div class="htmlElement">
+            <h1 style="color: black; text-align:center; font-style:italic; font-family: cursive;">HTML ELEMENTS</h1>
+
+            <p style="text-align: center; color:rgb(221, 220, 219)">An HTML element is defined by a start tag, some
+                content, and an end tag.</p>
+            <hr class="hr1">
+            <b>
+                <p style="margin-left:100px;font-style:italic; color:black">An HTML file is made of elements. These
+                    elements are responsible for creating web pages and<br> define content in that webpage.
+                    An element in HTML usually consist of a start tag &lt;tag name&gt;,<br> close tag &lt;/tag name&gt;
+                    and content inserted between them.
+                    Technically, an element is a collection <br>of start tag, attributes, end tag, content between them.
+                    <br><br>
+                </p>
+                <p style="margin-left:100px;font-style:italic; color:darkred">The HTML element is everything from the
+                    start tag to the end tag:
+                    <br><br>
+                    &lt;tagname&gt;Content goes here...&lt;/tagname&gt;<br><br>
+                    Examples of some HTML elements:
+                    <br><br>
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;
+                    <br>
+                    &lt;p&gt;My first paragraph.&lt;/p&gt;
+                    <br><br>
+                </p>
+            </b>
+            <b>
+                <table border="1"
+                    style=" width:80%;margin-left:100px;text-align:center;font-style:italic;color:rgb(40, 19, 161)">
+                    <tr>
+                        <th style="color:black">Start Tag</th>
+                        <th style="color:black">Element Content</th>
+                        <th style="color:black">End Tag</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>My First Heading</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>My First Paragraph</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>none</td>
+                        <td>none</td>
+                    </tr>
+                </table>
+            </b>
+
+            <br><br>
+            <h2 style="color: black; text-align:center; font-style:italic"> Nested HTML Elements</h2>
+            <b>
+                <p style="margin-left:100px;font-style:italic; color:rgb(17, 1, 1)">
+                    HTML elements can be nested (this means that elements can contain other elements).
+                    <br>
+                    All HTML documents consist of nested HTML elements.
+                    <br>
+                    The following example contains four HTML elements <br>(&lt;html&gt;, &lt;body&gt;, &lt;h1&gt; and
+                    &lt;p&gt;)
+                </p>
+            </b>
+            <b>
+                <h3 style="margin-left:100px;font-style:italic; color:rgb(17, 1, 1)">Example</h3>
+                <p style="margin-left:100px;font-style:italic; color:darkred">
+
+
+                    &lt;!DOCTYPE html :&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                    &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </p>
+            </b>
+            <br> <br>
+            <b>
+                <h3 style="margin-left:100px;font-style:italic; color:rgb(17, 1, 1)"> Example Explained</h3>
+                <p style="margin-left:100px;font-style:italic; color:rgb(40, 19, 161)">
+
+                    The &lt;html&gt; element is the root element and it defines
+                    the whole HTML document.
+
+                    It has a start <br> tag &lt;html&gt; and an end tag &lt;/html&gt;.
+
+                    <br><br> Then, inside the &lt;html&gt; element there is a &lt;body&gt; element
+                    <br><br>
+                    The &lt;body&gt; element defines the document's body.
+
+                    It has a start tag &lt;body&gt; and an end tag<br> &lt;/body&gt;.
+                    <br>
+                    Then, inside the &lt;body&gt; element there are two other elements: <br>
+                    &lt;h1&gt; and &lt;p&gt;
+                </p>
+            </b>
+            <br><br>
+            <div class="BtnContainer">
+                <button class="PrevBtn"> <a href="htmlPage1.html" style="color:white">◀ PREV </a>
+                </button>
+                <button class="NextBtn"> <a href="htmlPage3.html" style="color:white"> NEXT ▶</a>
+                </button>
+            </div>
+        </div>
+        <br><br><br><br>
+</body>
+
+</html>

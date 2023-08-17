@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript MCQ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0px;
+            background-color: rgb(17, 124, 143);
+
+            font-family: 'Poppins', sans-serif
+        }
+
+        .container {
+
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .innerContainer {
+            width: 40vw;
+            background-color: white;
+            padding: 30px 80px;
+            border-radius: 10px;
+        }
+
+        .innerContainer h2 {
+            font-size: 30px;
+            margin-top: 10px;
+            ;
+            margin-bottom: 40px;
+            ;
+        }
+
+        .innerContainer li {
+            font-size: 20px;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        input {
+            cursor: pointer;
+        }
+
+        #submitBtn,
+        .btn {
+            padding: 10px 30px;
+            font-size: 20px;
+            display: block;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            color: White;
+            background-color: #69aef3;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        #submitBtn:hover {
+            background-color: rgb(17, 124, 143);
+        }
+
+        .btn:hover {
+            background-color: rgb(17, 124, 143);
+        }
+
+        #showScore {
+            background-color: #d6dee2;
+            margin-top: 30px;
+            padding: 30px 40px;
+            border-radius: 5px;
+        }
+
+        .scoreArea {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="innerContainer">
+            <h2 class="question">Questionnn</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1">Ans1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans1" id="option2">Ans2</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans1" id="option3">Ans3</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans1" id="option4">Ans4</label>
+                </li>
+            </ul>
+            <button id="submitBtn">SUBMIT</button>
+            <div class="scoreArea" id="showScore">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const quiz = [
+            {
+                question: "Q1: What is the purpose of the JavaScript addEventListener method?",
+                a: "To change the appearance of HTML elements.",
+                b: "To remove an event handler from an element.",
+                c: "To execute a function when an event occurs on an element.",
+                d: "To create a new HTML element in the DOM",
+                ans: "ans3"
+            },
+            {
+                question: "Q2: What is the purpose of the JavaScript setTimeout function?",
+                a: "To create a new timer in JavaScript.",
+                b: "To execute a function at a specific time in the future.",
+                c: " To delay the execution of a function for a specified amount of time.",
+                d: "To pause the execution of JavaScript code.",
+                ans: "ans2"
+            },
+            {
+                question: "Q3: Which of the following is the correct way to define a JavaScript function using the function expression syntax?",
+                a: "function myFunction() { }",
+                b: "myFunction = function() { }",
+                c: "var function myFunction() { }",
+                d: " const myFunction = () => { }",
+                ans: "ans4"
+            },
+            {
+                question: "Q4: What does the JavaScript === operator check for?",
+                a: "Equality, excluding type conversion.",
+                b: "Equality, including type conversion.",
+                c: "Assignment of values.",
+                d: "Inequality, including type conversion.",
+                ans: "ans2"
+            },
+            {
+                question: "Q5: Which of the following statements correctly creates a new array in JavaScript?",
+                a: "var arr = [1, 2, 3];",
+                b: "var arr = new Array(1, 2, 3);",
+                c: "var arr = Array(1, 2, 3);",
+                d: "var arr = array(1, 2, 3);",
+                ans: "ans1"
+            }
+
+        ];
+
+        const question = document.querySelector('.question');
+        const option1 = document.querySelector('#option1');
+        const option2 = document.querySelector('#option2');
+        const option3 = document.querySelector('#option3');
+        const option4 = document.querySelector('#option4');
+        const submit = document.querySelector('#submitBtn');
+
+        const answers = document.querySelectorAll('.answer');
+        const showScore = document.querySelector('#showScore');
+
+        let quesCount = 0;
+        let score = 0;
+
+        const loadQuestion = () => {
+            question.innerText = quiz[quesCount].question;
+            option1.innerText = quiz[quesCount].a;
+            option2.innerText = quiz[quesCount].b;
+            option3.innerText = quiz[quesCount].c;
+            option4.innerText = quiz[quesCount].d;
+
+        }
+
+        loadQuestion();
+        const getCheckAnswer = () => {
+            let answer;
+
+            answers.forEach((curAnsElement) => {
+                if (curAnsElement.checked) {
+                    answer = curAnsElement.id;
+                }
+
+            })
+            return answer;
+        };
+
+        const deselectAll = () => {
+            answers.forEach((curAnsElement) => curAnsElement.checked = false);
+        }
+
+        submit.addEventListener('click', () => {
+            const checkedAnswer = getCheckAnswer();
+
+            if (checkedAnswer === quiz[quesCount].ans) {
+                score++;
+            }
+
+            quesCount++;
+            deselectAll();
+
+
+            if (quesCount < quiz.length) {
+                loadQuestion();
+            } else {
+                if (score >= 4) {
+                    showScore.innerHTML = `
+                     <h3> Your Score   ${score}/${quiz.length}  😄</h3>
+                    <button class="btn" onclick="location.reload()">Play Again</button>
+                     `;
+
+                    if (showScore) {
+                        showScore.classList.remove('scoreArea');
+                    }
+                }
+                else if (score == 3) {
+                    showScore.innerHTML = `
+                     <h3> Your Score   ${score}/${quiz.length}  😊</h3>
+                    <button class="btn" onclick="location.reload()">Play Again</button>
+                     `;
+
+                    if (showScore) {
+                        showScore.classList.remove('scoreArea');
+                    }
+
+                }
+                else {
+                    showScore.innerHTML = `
+                     <h3> Your Score   ${score}/${quiz.length}  ☹️</h3>
+                    <button class="btn" onclick="location.reload()">Play Again</button>
+                     `;
+
+                    if (showScore) {
+                        showScore.classList.remove('scoreArea');
+                    }
+
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Tutorial</title>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        div.cssText {
+            background-color: rgb(85, 132, 139);
+            width: 80%;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 240px;
+            border-radius: 5px;
+            border: 1 px solid gainsboro;
+            color: whitesmoke;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        nav a:visited {
+            color: beige;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        hr.hr1 {
+            border: 1px solid rgb(165, 147, 147);
+        }
+
+        .PrevBtn {
+            font-size: 21px;
+            margin-left: auto;
+            position: relative;
+            background-color: rgb(17, 124, 143);
+            border-radius: 4px;
+            border: none;
+        }
+
+        #sidenav {
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            margin-top: 0px;
+        }
+
+        .sidenav {
+            float: right;
+            border-color: rgb(16, 111, 128);
+            overflow: hidden;
+            background-color: rgb(17, 124, 143);
+            width: 200px;
+        }
+
+        .sidenav a {
+            display: block;
+            text-align: left;
+            padding: 14px 16px;
+            color: snow;
+            text-decoration: none;
+        }
+
+        .sidenav a:hover {
+            background-color: rgb(15, 87, 100);
+            color: rgb(230, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #course">Courses&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #studyMaterial">Study Material&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #mcq">MCQs&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="Register.html" target="_blank">Register</a>
+    </nav>
+    <hr>
+    <section>
+        <div class="sidenav" id="sidenav">
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>----HTML----</b></p>
+
+            <a href="htmlPage1.html">⚪ HTML Intro</a>
+            <a href="htmlPage2.html">⚪ HTML Elements</a>
+            <a href="htmlPage3.html">⚪ HTML Attributes</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b
+                    style="color:rgb(181, 213, 218)">-----CSS-----</b></p>
+            <a href="cssPage1.html">⚪ CSS Intro</a>
+            <a href="cssPage2.html">⚪ CSS Borders</a>
+            <a href="cssPage3.html">🔵<i><b> CSS Text</b></i></a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>---JavaScript---</b></p>
+
+            <a href="jsPage1.html">⚪ JavaScript Intro</a>
+            <a href="jsPage2.html">⚪ JavaScript Data Types</a>
+            <a href="jsPage3.html">⚪ JavaScript Operators</a>
+        </div>
+    </section>
+
+    <div class="cssText" class="Column">
+        <h1 style="color: black; text-align:center; font-style:italic; font-family: cursive;">CSS TEXT</h1>
+
+        <b>
+            <p style="text-align: center; color:rgb(221, 220, 219)">CSS has a lot of properties for formatting text.
+
+            </p>
+        </b>
+        <hr class="hr1">
+        <h1 style="color: black; margin-left:100px; font-style:italic">Text Color</h1>
+        <b>
+            <p style="color: black; margin-left:100px; font-style:italic">
+                The color property is used to set the color of the text. <br><br>
+                The color is specified by:<br>
+
+                ▪ a color name - like "red"<br><br>
+                ▪ a HEX value - like "#ff0000"<br><br>
+                ▪ an RGB value - like "rgb(255,0,0)"<br>
+            </p>
+        </b>
+        <h3 style="color: black; margin-left:120px; font-style:italic">Example :</h3>
+        <b>
+            <p style="color: darkred; margin-left:120px; font-style:italic">
+                body {<br>
+                color: blue;<br>
+                }
+                <br>
+                h1 {<br>
+                color: green;<br>
+                }
+
+            </p>
+        </b>
+
+        <h1 style="color: black; margin-left:100px; font-style:italic">Text Color and Background Color
+        </h1>
+        <b>
+            <p style="color: black; margin-left:100px; font-style:italic">
+
+                In this example, we define both the background-color property and the color property:
+            </p>
+        </b>
+
+
+        <h3 style="color: black; margin-left:120px; font-style:italic">Example :</h3>
+        <b>
+            <p style="color: darkred; margin-left:120px; font-style:italic">
+                body {<br>
+                background-color: lightgrey;<br>
+                color: blue;<br>
+                }<br>
+
+                h1 {<br>
+                background-color: black;<br>
+                color: white;<br>
+                }<br>
+
+                div {<br>
+                background-color: blue;<br>
+                color: white;<br>
+                }
+
+            </p>
+        </b>
+        <h1 style="color: black; margin-left:100px; font-style:italic">Text Alignment
+
+        </h1>
+
+        <b>
+            <p style="color: black; margin-left:100px; font-style:italic">
+                The text-align property is used to set the horizontal alignment of a text.<br>
+
+                A text can be left or right aligned, centered, or justified.<br>
+
+                The following example shows center aligned, and left and right aligned text (left alignment is default
+                if text direction is left-to-right, and right alignment is default if text direction is right-to-left):
+
+
+            </p>
+        </b>
+        <h3 style="color: black; margin-left:120px; font-style:italic">Example :</h3>
+        <b>
+            <p style="color: darkred; margin-left:120px; font-style:italic">
+                h1 {<br>
+                text-align: center;<br>
+                }<br>
+
+                h2 {<br>
+                text-align: left;<br>
+                }<br>
+
+                h3 {<br>
+                text-align: right;<br>
+                }
+                <br><br>
+                When the text-align property is set to "justify", each line is stretched so that every line has equal
+                width, and the left and right margins are straight (like in magazines and newspapers)
+            </p>
+            <br><br>
+            <button class="PrevBtn"> <a href="cssPage2.html" style="color:white">◀ PREV </a>
+            </button>
+
+    </div>
+    <br><br><br><br>
+
+
+</body>
+
+</html>

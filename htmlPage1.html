@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Turtorial</title>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        nav a:visited {
+            color: beige;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        div.htmlIntro {
+            overflow: hidden;
+            background-color: rgb(85, 132, 139);
+            width: 80%;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 240px;
+            border-radius: 5px;
+            border: 1 px solid gainsboro;
+            color: whitesmoke;
+        }
+
+        hr.hr1 {
+            border: 1px solid rgb(165, 147, 147);
+        }
+
+        .NextBtn {
+            font-size: 21px;
+            margin-left: 92%;
+            position: relative;
+            background-color: rgb(17, 124, 143);
+            border-radius: 4px;
+            border: none;
+
+        }
+
+        #sidenav {
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            margin-top: 0px;
+        }
+
+        .sidenav {
+            float: right;
+            border-color: rgb(16, 111, 128);
+            overflow: hidden;
+            background-color: rgb(17, 124, 143);
+            width: 200px;
+        }
+
+        .sidenav a {
+            display: block;
+            text-align: left;
+            padding: 14px 16px;
+            color: snow;
+            text-decoration: none;
+        }
+
+        .sidenav a:hover {
+            background-color: rgb(15, 87, 100);
+            color: rgb(230, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #course">Courses&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #studyMaterial">Study Material&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #mcq">MCQs&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="Register.html" target="_blank">Register</a>
+    </nav>
+    <hr>
+    <section>
+        <div class="sidenav" id="sidenav">
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b
+                    style="color:rgb(181, 213, 218)">----HTML---- </b></p>
+
+            <a href="htmlPage1.html">🔵<i><b> HTML Intro</b></i></a>
+            <a href="htmlPage2.html">⚪ HTML Elements</a>
+            <a href="htmlPage3.html">⚪ HTML Attributes</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>----CSS----</b></p>
+
+            <a href="cssPage1.html">⚪ CSS Intro</a>
+            <a href="cssPage2.html">⚪ CSS Borders</a>
+            <a href="cssPage3.html">⚪ CSS Text</b></i></a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>---JavaScript---</b></p>
+
+            <a href="jsPage1.html">⚪ JavaScript Intro</a>
+            <a href="jsPage2.html">⚪ JavaScript Data Types</a>
+            <a href="jsPage3.html">⚪ JavaScript Operators</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="htmlIntro">
+            <h1 style="color: black; text-align:center; font-style:italic; font-family: cursive;"> HTML
+                INTRODUCTION</h1>
+            <p style="text-align: center;color:rgb(221, 220, 219)">HTML is the standard markup language for creating Web
+                pages.</p>
+            <hr class="hr1">
+            <h2 style="margin-left:100px;font-style:italic; color:black">What is HTML?</h2>
+            <b>
+                <p style="margin-left:100px;font-style:italic; color:black">
+                    HTML stands for Hyper Text Markup Language
+                    HTML is the standard markup language for creating Web pages
+                    HTML describes the structure of a Web page
+                    HTML consists of a series of elements
+                    HTML elements tell the browser how to display the content
+                    HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                    link", etc.
+                </p>
+            </b>
+            <h3 style="margin-left:100px;font-style:italic;color:black">A Simple HTML Document<br><br> Example:</h3>
+            <p style="margin-left:100px;font-style:italic;color:darkred"><br>
+                <br>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;Page Title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+
+                &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </p>
+            <h3 style="margin-left:100px;font-style:italic;color:black"> Example Exaplained</h3>
+            <b>
+                <p style="margin-left:100px;font-style:italic;color:darkred;">
+
+                    The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document<br><br>
+                    The &lt;html&gt; element is the root element of an HTML page<br><br>
+                    The &lt;head&gt; element contains meta information about the HTML page<br><br>
+                    The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title
+                    bar or in the page's tab)<br><br>
+                    The &lt;body&gt; element defines the document's body, and is a container for all the visible
+                    contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.<br><br>
+                    The &lt;h1&gt; element defines a large heading<br><br>
+                    The &lt;p&gt; element defines a paragraph<br>
+                    <br>
+
+                </p>
+            </b>
+
+            <br><br>
+            <button class="NextBtn"> <a href="htmlPage2.html" style="color:white"> NEXT ▶</a>
+            </button>
+
+        </div>
+    </section>
+    <br><br><br><br>
+
+
+</body>
+
+</html>

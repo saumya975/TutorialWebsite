@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Tutorial</title>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        nav a:visited {
+            color: beige;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        div.cssBorders {
+            background-color: rgb(85, 132, 139);
+            width: 80%;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 240px;
+            border-radius: 5px;
+            border: 1 px solid gainsboro;
+            color: whitesmoke;
+        }
+
+        hr.hr1 {
+            border: 1px solid rgb(165, 147, 147);
+        }
+
+        .BtnContainer {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+        .PrevBtn,
+        .NextBtn {
+            font-size: 21px;
+            border-radius: 4px;
+
+            border: none;
+            background-color: rgb(17, 124, 143);
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+        .p_border1 {
+            border-style: solid;
+        }
+
+        .p_border2 {
+            border-bottom-style: solid;
+            border-color: red;
+        }
+
+        .p_border3 {
+            border-style: solid;
+            border-color: blue;
+            border-radius: 18px;
+            padding: 5px;
+
+        }
+
+        .p1_border {
+            border-style: dotted;
+            border-color: black;
+        }
+
+        .p2_border {
+            border-style: dashed;
+            border-color: black;
+        }
+
+        .p3_border {
+            border-style: solid;
+            border-color: black;
+        }
+
+        .p4_border {
+            border-style: double;
+            border-color: black;
+        }
+
+        .p5_border {
+            border-style: inset;
+            border-color: yellow;
+        }
+
+        .p6_border {
+            border-style: outset;
+            border-color: yellow;
+        }
+
+        .p7_border {
+            border-style: none;
+            border-color: black;
+        }
+
+        .p8_border {
+            border-style: hidden;
+            border-color: black;
+        }
+
+        #sidenav {
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            margin-top: 0px;
+        }
+
+        .sidenav {
+            float: right;
+            border-color: rgb(16, 111, 128);
+            overflow: hidden;
+            background-color: rgb(17, 124, 143);
+            width: 200px;
+        }
+
+        .sidenav a {
+            display: block;
+            text-align: left;
+            padding: 14px 16px;
+            color: snow;
+            text-decoration: none;
+        }
+
+        .sidenav a:hover {
+            background-color: rgb(15, 87, 100);
+            color: rgb(230, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #course">Courses&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #studyMaterial">Study Material&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #mcq">MCQs&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="Register.html" target="_blank">Register</a>
+    </nav>
+    <hr>
+    <section>
+        <div class="sidenav" id="sidenav">
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>----HTML----</b></p>
+
+            <a href="htmlPage1.html">⚪ HTML Intro</a>
+            <a href="htmlPage2.html">⚪ HTML Elements</a>
+            <a href="htmlPage3.html">⚪ HTML Attributes</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b
+                    style="color:rgb(181, 213, 218)">-----CSS-----</b></p>
+
+            <a href="cssPage1.html">⚪ CSS Intro</a>
+            <a href="cssPage2.html">🔵<i><b> CSS Borders</b></i></a>
+            <a href="cssPage3.html">⚪ CSS Text</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>---JavaScript---</b></p>
+
+            <a href="jsPage1.html">⚪ JavaScript Intro</a>
+            <a href="jsPage2.html">⚪ JavaScript Data Types</a>
+            <a href="jsPage3.html">⚪ JavaScript Operators</a>
+        </div>
+    </section>
+
+    <div class="cssBorders">
+        <h1 style="color: black; text-align:center; font-style:italic; font-family: cursive;">CSS BORDERS</h1>
+
+        <p style="margin-left:100px; color:rgb(221, 220, 219)">The CSS border properties allow you to specify the style,
+            width,
+            and color of an element's border.
+
+        </p>
+        <hr class="hr1">
+        <br>
+
+        <p class="p_border1" style="color:black; text-align:center; font-style:italic">
+            I have borders on all sides.
+        </p>
+
+        <p class="p_border2" style="color:black; text-align:center; font-style:italic">
+            I have a red bottom border.
+        </p>
+
+        <p class="p_border3" style="color:black; text-align:center; font-style:italic">
+            I have blue rounded border.
+        </p>
+        <br>
+
+        <h2 style="margin-left:100px;font-style:italic; color:black">CSS Border Style</h2>
+
+        <b>
+            <p style="color:rgb(3, 51, 59); margin-left:100px; font-style:italic">
+                The border-style property specifies what kind of border to display.<br><br>
+
+                The following values are allowed:<br><br>
+
+                <i style="color:black">dotted</i> - Defines a dotted border<br>
+                <i style="color:black">dashed</i> - Defines a dashed border<br>
+                <i style="color:black">solid</i> - Defines a solid border<br>
+                <i style="color:black">double</i> - Defines a double border<br>
+                <i style="color:black">ridge</i> - Defines a 3D ridged border. The effect depends on the
+                border-color value<br>
+                <i style="color:black">inset</i> - Defines a 3D inset border. The effect depends on the
+                border-color value<br>
+                <i style="color:black">outset</i> - Defines a 3D outset border. The effect depends on the
+                border-color value<br>
+                <i style="color:black">none</i> - Defines no border
+            </p>
+        </b>
+        <h3 style="color: black; margin-left:120px; font-style:italic">Example</h3>
+
+        <b>
+            <p style="color: darkred; margin-left:120px; font-style:italic">
+                1.&nbsp &nbsp &nbsp p.dotted {border-style: dotted;}<br>
+                2.&nbsp &nbsp &nbsp p.dashed {border-style: dashed;}<br>
+                3.&nbsp &nbsp &nbsp p.solid {border-style: solid;}<br>
+                4.&nbsp &nbsp &nbsp p.double {border-style: double;}<br>
+                5.&nbsp &nbsp &nbsp p.inset {border-style: inset;}<br>
+                6.&nbsp &nbsp &nbsp p.outset {border-style: outset;}<br>
+                7.&nbsp &nbsp &nbsp p.none {border-style: none;}<br>
+                8.&nbsp &nbsp &nbsp p.hidden {border-style: hidden;}<br>
+            </p>
+        </b>
+        <h3 style="color: black; margin-left:120px; font-style:italic">Results</h3>
+
+        <p class="p1_border" style="color:black; text-align:center; font-style:italic">
+            A Dotted Border
+        </p>
+        <p class="p2_border" style="color:black; text-align:center; font-style:italic">
+            A Dashed Border
+        </p>
+        <p class="p3_border" style="color:black; text-align:center; font-style:italic">
+            A Solid Border
+        </p>
+        <p class="p4_border" style="color:black; text-align:center; font-style:italic">
+            A Double Border
+        </p>
+        <p class="p5_border" style="color:black; text-align:center; font-style:italic">
+            An Inset Border. The effect depends on the border-color value.
+        </p>
+        <p class="p6_border" style="color:black; text-align:center; font-style:italic">
+            An Outset Border. The effect depends on the border-color value.
+        </p>
+        <p class="p7_border" style="color:black; text-align:center; font-style:italic">
+            No Border
+        </p>
+        <p class="p8_border" style="color:black; text-align:center; font-style:italic">
+            Hidden Border
+        </p>
+        <br><br>
+        <div class="BtnContainer">
+            <button class="PrevBtn"> <a href="cssPage1.html" style="color:white">◀ PREV </a>
+            </button>
+            <button class="NextBtn"> <a href="cssPage3.html" style="color:white"> NEXT ▶</a>
+            </button>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+</body>
+
+</html>

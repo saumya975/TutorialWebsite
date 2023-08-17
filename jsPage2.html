@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Tutorial</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        nav a:visited {
+            color: beige;
+        }
+
+        nav a:hover {
+            color: tomato;
+        }
+
+        div.jsOperators {
+            background-color: rgb(85, 132, 139);
+            width: 80%;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 240px;
+            border-radius: 5px;
+            border: 1 px solid gainsboro;
+            color: whitesmoke;
+        }
+
+        hr.hr1 {
+            border: 1px solid rgb(165, 147, 147);
+        }
+
+        .BtnContainer {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+        .PrevBtn,
+        .NextBtn {
+            font-size: 21px;
+            border-radius: 4px;
+
+            border: none;
+            background-color: rgb(17, 124, 143);
+            color: white;
+            text-decoration: none;
+        }
+
+        #sidenav {
+            position: absolute;
+            z-index: 1;
+            width: 180px;
+            margin-top: 0px;
+        }
+
+        .sidenav {
+            float: right;
+            border-color: rgb(16, 111, 128);
+            overflow: hidden;
+            background-color: rgb(17, 124, 143);
+            width: 200px;
+        }
+
+        .sidenav a {
+            display: block;
+            text-align: left;
+            padding: 14px 16px;
+            color: snow;
+            text-decoration: none;
+        }
+
+        .sidenav a:hover {
+            background-color: rgb(15, 87, 100);
+            color: rgb(230, 225, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #course">Courses&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #studyMaterial">Study Material&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="index.html #mcq">MCQs&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+        <a href="Register.html" target="_blank">Register</a>
+    </nav>
+    <hr>
+    <section>
+        <div class="sidenav" id="sidenav">
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>----HTML----</b></p>
+
+            <a href="htmlPage1.html">⚪ HTML Intro</a>
+            <a href="htmlPage2.html">⚪ HTML Elements</a>
+            <a href="htmlPage3.html">⚪ HTML Attributes</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b>-----CSS-----</b></p>
+
+            <a href="cssPage1.html">⚪ CSS Intro</b></i></a>
+            <a href="cssPage2.html">⚪ CSS Borders</a>
+            <a href="cssPage3.html">⚪ CSS Text</a>
+            <p style="text-align: center; font-size: 18px; color:whitesmoke"> <b
+                    style="color:rgb(181, 213, 218)">---JavaScript---</b></p>
+
+            <a href="jsPage1.html">⚪ JavaScript Intro</b></i></a>
+            <a href="jsPage2.html">🔵<i><b> JavaScript Data Types</b></i></a>
+            <a href="jsPage3.html">⚪ JavaScript Operators</a>
+
+        </div>
+    </section>
+
+    <div class="jsOperators">
+        <h1 style="color: black; text-align:center; font-style:italic; font-family: cursive;">JavaScript OPERATORS</h1>
+        
+        <b>
+            <p style="text-align: center; color:rgb(221, 220, 219)">Operators are used to perform operations on variables and
+                values.</p>
+        </b>
+        <hr class="hr1">
+
+
+        <b>
+            <p style="margin-left:100px;font-style:italic; color:black">
+                Java divides the operators into the following groups:<br>
+
+                1. Arithmetic operators <br>
+                2. Assignment operators <br>
+                3. Comparison operators <br>
+                4. Logical operators <br>
+                5.Bitwise operators <br>
+            </p>
+        </b>
+            <h2 style="margin-left:100px;font-style:italic; color:black">ARITHMETIC OPERATORS</h2>
+        <b>
+            <p style="margin-left:100px;font-style:italic; color:black">
+
+                Arithmetic operators are used to perform common mathematical operations.
+            </p>
+        </b>
+        <b>
+            <table border="1"
+                style=" width:80%;margin-left:100px;text-align:center;font-style:italic;color:rgb(116, 7, 218)">
+                <tr>
+                    <th style="color:black">Operator</th>
+                    <th style="color:black">Name</th>
+                    <th style="color:black">Description</th>
+                    <th style="color:black">Example</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>Adds together two values</td>
+                    <td>a+b</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td> Multiplies two values</td>
+                    <td>a*b</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td> Returns the division remainder</td>
+                    <td>a%b</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Increment</td>
+                    <td> Increases the value of a variable by 1</td>
+                    <td>++a</td>
+                </tr>
+
+
+
+            </table>
+
+                <h2 style="margin-left:100px;font-style:italic; color:black">LOGICAL OPERATORS</h2>
+            <b>
+                <p style="margin-left:100px;font-style:italic; color:black">
+                    Logical operators are used to determine the logic between variables or values:
+                </p>
+            </b>
+            <b>
+                <table border="1"
+                    style=" width:80%;margin-left:100px;text-align:center;font-style:italic;color:rgb(116, 7, 218)">
+                    <tr>
+                        <th style="color:black">Operator</th>
+                        <th style="color:black">Name</th>
+                        <th style="color:black">Description</th>
+                        <th style="color:black">Example</th>
+                    </tr>
+                    <tr>
+                        <td>&&</td>
+                        <td>Logical and</td>
+                        <td>Returns true if both statements are true </td>
+                        <td> x &lt; 5 && x &lt; 10</td>
+                    </tr>
+                    <tr>
+                        <td>||</td>
+                        <td>Logical or</td>
+                        <td>Returns true if one of the statements is true </td>
+                        <td>x &lt; 5 || x &lt; 4</td>
+                    </tr>
+                    <tr>
+                        <td>!</td>
+                        <td>Logical not</td>
+                        <td>Reverse the result, returns false if the result is true </td>
+                        <td>!(x &lt;5 && x &lt; 10)</td>
+                    </tr>
+
+                    </p>
+            </b>
+        </b></table>
+
+
+            <h2 style="margin-left:100px;font-style:italic; color:black">COMPARISON OPERATORS</h2>
+        <b>
+            <p style="margin-left:100px;font-style:italic; color:black">
+
+                Comparison operators are used to compare two values
+
+                <b>
+                    <table border="1"
+                        style=" width:80%;margin-left:100px;text-align:center;font-style:italic;color:rgb(116, 7, 218)">
+                        <tr>
+                            <th style="color:black">Operator</th>
+
+                            <th style="color:black">Description</th>
+                            <th style="color:black">Example</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to</td>
+                            <td>x==y</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Not Equal to</td>
+                            <td>x!=y</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td> Greater than or equal to</td>
+                            <td>x>=y</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Less than or equal to</td>
+                            <td>x&lt;=y</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td> Greater than o</td>
+                            <td>x>y</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td> Less than</td>
+                            <td>x&lt;y </td>
+                        </tr>
+
+
+            </p>
+        </b>
+        </b></table>
+            <h2 style="margin-left:100px;font-style:italic; color:black">ASSIGNMENT OPERATORS</h2>
+        <b>
+            <p style="margin-left:100px;font-style:italic; color:black">
+                Assignment operators are used to assign values to variables.
+
+                <b>
+                    <table border="1"
+                        style=" width:80%;margin-left:100px;text-align:center;font-style:italic;color:rgb(116, 7, 218)">
+                        <tr>
+                            <th style="color:black">Operator</th>
+
+                            <th style="color:black">Example</th>
+                            <th style="color:black">Same As</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>x = 5</td>
+                            <td>x = 5</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>x += 5</td>
+                            <td>x = x+5</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td> x -= 5</td>
+                            <td>x = x-5</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>x *= 5</td>
+                            <td>x = x*5</td>
+                        </tr>
+                        <tr>
+                            <td>%=</td>
+                            <td> x %= 5</td>
+                            <td>x = x % 5</td>
+                        </tr>
+                        <tr>
+                            <td>&=</td>
+                            <td>x &= 5</td>
+                            <td>x = x & 5</td>
+                        </tr>
+
+
+            </p>
+        </b>
+        </b></table>
+
+
+
+        <br><br>
+        <div class="BtnContainer">
+            <button class="PrevBtn"> <a href="jsPage1.html" style="color:white">◀ PREV </a>
+            </button>
+            <button class="NextBtn"> <a href="js Page3.html" style="color:white"> NEXT ▶</a>
+            </button>
+        </div>
+
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>

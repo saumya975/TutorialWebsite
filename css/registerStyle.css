@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0px;
+    background-color: rgb(17, 124, 143);
+
+    font-family: 'Poppins',sans-serif}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+nav a:visited{
+    color:rgb(207, 209, 170);
+}
+
+nav a:hover{
+    color:tomato;
+}
+
+div.Rmain{
+    width: 500px;
+    padding:25px;
+    margin:50px auto 0;
+}
+.btn{
+    border:1px groove #2B7A7B;
+    border-radius: 15px;
+    padding:10px 30px;
+    color:whitesmoke ;
+    font-size:medium;
+    font-weight: 400px;
+    background-color: rgb(17, 124, 143);
+    text-decoration: none;
+}
+.btn:hover{
+background-color:rgb(17, 124, 143);
+opacity: 90%;
+color:black;
+}
+
+h1.t{
+text-align:center;
+padding:20px;
+font-family:cursive;
+}
+div.register{
+background-color:rgba(0,0,0,0.5);
+padding: 10px;
+width:500px;
+height: auto;
+font-size:20px;
+border-radius: 10px;
+border:1 px solid gainsboro;
+color:whitesmoke;
+text-align: center;
+box-shadow: burlywoods;
+}
+form #register{
+margin:70px;
+}
+label{
+font-family:'Poppins',sans-serif;
+font-size:20px;
+font-style:italic;
+}
+input.name{
+width:250px;
+padding:2px;
+
+border:1px solid white;
+border-radius:3px; 
+background-color:rgb(240, 215, 240);
+
+}
+.formerror {
+    color: rgb(231, 109, 109);
+}
